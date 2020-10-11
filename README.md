@@ -10,3 +10,6 @@ Our project mainly aims to streamline the process of the interaction of the tuto
  - ML - NLP,Spacy,Word2Vec
 
 And many more packages to make this project happen.
+
+## Screenshots
+![Main logo](/images/educator_with_bg.png)
