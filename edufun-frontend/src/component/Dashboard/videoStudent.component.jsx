@@ -16,7 +16,7 @@ class VideoStudent extends React.Component {
     onLoad() {
         const { myTutor } = this.props.tutor
         axios
-            .post(`${backendURL}/test/users/viewVideos`, {
+            .post(`${backendURL}/test/orgs/viewVideos`, {
                 // 'teacherId': localStorage.getItem('myTutor'),
                 'teacherId': myTutor.myTutor,
                 'token': `${localStorage.getItem('jwtToken').split(" ")[1]}`
@@ -26,7 +26,7 @@ class VideoStudent extends React.Component {
                 this.setState({
                     videos: res.data.videos
                 })
-                console.log(this.state.resources)
+                console.log(this.state.videos)
             })
     }
     onChange = e => {
@@ -36,7 +36,7 @@ class VideoStudent extends React.Component {
         })
     }
     componentDidMount() {
-        // this.onLoad()
+        this.onLoad()
     }
     render() {
         const { videos } = this.state
