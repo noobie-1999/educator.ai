@@ -6,7 +6,9 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import Footer from "../footer";
 import Notes from "./notes.component";
-import Tabs from './tabs/tabs'
+import Tabs from './tabs/tabs';
+import VideoStudent from "./videoStudent.component";
+
 class Dashboard1 extends Component {
 
     render() {
@@ -51,6 +53,9 @@ class Dashboard1 extends Component {
                                     <div label="Notes">
                                         <Notes />
                                     </div>
+                                    <idv label="Videos">
+                                        <VideoStudent />
+                                    </idv>
                                 </Tabs>
 
 

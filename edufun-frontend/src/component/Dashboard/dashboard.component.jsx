@@ -7,6 +7,7 @@ import Footer from "../footer";
 import Manage from "./manage.component";
 import Resources from './resources.component';
 import Tabs from './tabs/tabs'
+import VideoTeacher from "./videoTeacher.component";
 class Dashboard extends Component { 
 
   render() {
@@ -36,8 +37,7 @@ class Dashboard extends Component {
                     <b>Hello {user.name || user.teacherName}!</b>
                     </h3>
                   </div>
-                </section>
-
+              </section>
                 <div
                   style={{
                     margin: "5em 2em",
@@ -49,7 +49,10 @@ class Dashboard extends Component {
                     </div>
                     <div label="Resources">
                       <Resources />
-                    </div>
+                  </div>
+                  <div label="Videos">
+                    <VideoTeacher />
+                  </div>
                     <div>
 
                   </div></Tabs>

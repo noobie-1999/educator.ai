@@ -13,6 +13,7 @@ class RegisterTeacher extends Component {
             password: '',
             course: '',
             vision: '',
+            demoVideo: '',
             errors: {}
         }
     }
@@ -210,6 +211,21 @@ class RegisterTeacher extends Component {
 
                                 </span>
                                 <br />
+                                <InputGroup className="input-group-alternative" style={{ marginTop: '1em' }}>
+                                    <InputGroupAddon addonType="prepend">
+                                        <InputGroupText>
+                                            <i className="fa fa-user" />
+                                        </InputGroupText>
+                                    </InputGroupAddon>
+                                    <Input
+                                        placeholder="Demo Video (optional)"
+                                        type="text"
+                                        id="demoVideo"
+                                        onChange={this.onChange}
+                                        value={this.state.demoVideo}
+                                        error={errors.demoVideo}
+                                    />
+                                </InputGroup>
                             </FormGroup>
                             <Button
                                 className="btn-icon mb-3 mb-sm-0 login-button"
